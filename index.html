@@ -1,10 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Docker CI/CD</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VZeta | Soluciones Innovadoras</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+            background-color: #f5f7fa;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #38bdf8;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.1);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #0f172a;
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Aplicación desplegada con Docker y NGINX</h1>
-    <p>Proyecto CI/CD funcionando.</p>
+
+    <header>
+        <div class="logo">VZeta</div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <h1>Bienvenido a VZeta</h1>
+        <p>
+            Impulsamos la transformación digital de empresas mediante
+            soluciones tecnológicas innovadoras, eficientes y escalables.
+        </p>
+
+        <a href="#contacto" class="btn">Contáctanos</a>
+    </section>
+
+    <section id="servicios">
+        <h2 style="text-align:center; margin-bottom:40px;">
+            Nuestros Servicios
+        </h2>
+
+        <div class="services">
+            <div class="card">
+                <h3>Desarrollo Web</h3>
+                <p>Creación de sitios y aplicaciones web modernas y responsivas.</p>
+            </div>
+
+            <div class="card">
+                <h3>Consultoría Tecnológica</h3>
+                <p>Asesoramiento estratégico para optimizar procesos y recursos.</p>
+            </div>
+
+            <div class="card">
+                <h3>Automatización</h3>
+                <p>Implementación de soluciones para aumentar la productividad.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" style="background:#ffffff;">
+        <h2 style="text-align:center; margin-bottom:25px;">Sobre VZeta</h2>
+
+        <p style="max-width:900px; margin:auto; text-align:center;">
+            En VZeta trabajamos para ofrecer soluciones innovadoras que ayuden
+            a nuestros clientes a crecer en un entorno digital competitivo.
+            Nuestro compromiso es entregar calidad, confianza y resultados.
+        </p>
+    </section>
+
+    <section id="contacto">
+        <h2 style="text-align:center; margin-bottom:25px;">Contacto</h2>
+
+        <p style="text-align:center;">
+            Email: contacto@vzeta.com<br>
+            Teléfono: +56 9 1234 5678
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 VZeta. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
